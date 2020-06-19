@@ -4,6 +4,7 @@
  
 export default function ProjectPost({ data }) {
     const project = data.markdownRemark
+    console.log(data)
 
     const featuredImgFluid = project.frontmatter.featuredImage.childImageSharp.fluid
     return(
@@ -28,7 +29,7 @@ export default function ProjectPost({ data }) {
     }
 
 export const query = graphql`
-    query($slug: String!){
+    query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }){
             html
             frontmatter{

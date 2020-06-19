@@ -8,11 +8,14 @@ import REDUX from '../images/redux.png'
 import sunset from '../images/sunset.mp4'
 import '../components/robert.css'
 import Projects from './projects'
+import Form from '../components/form'
 import Header from '../components/header'
-import { Link } from "gatsby"
+import { Link,graphql } from "gatsby"
 import Typewriter from 'typewriter-effect';
 
-const IndexPage = () => {
+export default function IndexPage({data}){
+  const projects = data.allMarkdownRemark
+  console.log(projects.edges)
   return(
     <div>
       <Header/>
@@ -61,7 +64,7 @@ const IndexPage = () => {
               <div className="w-1/2 h-12" style={{marginBottom:'15px'}}>
                   <div className="textBox">
                     <h3 className="title">About Me</h3>
-                    <p className="descPara">I build custom web appliations and sites for businesses.I deal with the technology so that 
+                    <p className="descPara">I build custom web applications and sites for businesses.I deal with the technology so that 
                         you can worry less about the quality of your tech. Your products will have the work ethic and creativity put
                         into them that will attract the most clients to your business.</p>
                   </div>
@@ -114,9 +117,37 @@ const IndexPage = () => {
                 </div>
         </div>
         <div>
-          <Projects/>
+          <Projects projects={projects}/>
         </div>
+        <Form/>
     </div>
   )
 }
-export default IndexPage
+
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        totalCount
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date(formatString: "DD MMMM, YYYY")
+              featuredImage{
+                childImageSharp{
+                  fluid(maxWidth:800){
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            excerpt
+            fields{
+              slug
+            }
+          }
+        }
+      }
+}`

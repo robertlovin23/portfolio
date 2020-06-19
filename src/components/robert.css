@@ -82,6 +82,12 @@ video {
     font-size:40px;
 }
 
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
 .textBox{
     margin-top: 50px;
     margin-bottom: 75px;
@@ -98,6 +104,10 @@ video {
 
 .profileImg {
     border-radius: 50%;
+    height: 300px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn{
