@@ -7,6 +7,14 @@ module.exports = {
     `gatsby-transformer-remark`,
     'gatsby-plugin-postcss',
     {
+      resolve:`gatsby-plugin-recaptcha`,
+      options:{
+        async: true,
+        defer: true,
+        args: `?onload=onloadCallback&render=explicit`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
         options: {
           fonts: [

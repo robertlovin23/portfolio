@@ -31,11 +31,22 @@ exports.createPages = async ({graphql,actions}) => {
         }
     `)
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        const templates = {
+            project: path.resolve(`./src/templates/project-post.js`),
+            blog: path.resolve(`./src/templates/blog-post.js`)
+        }
+        const slug = node.fields.slug
+
+        const slugKey = slug.split('/')[1]
+
+        console.log(slugKey,templates, node)
+
+        const template = slugKey === "projects" ? templates.project : templates.blog
         createPage({
-            path: node.fields.slug,
-            component: path.resolve(`./src/pages/templates/project-post.js`),
+            path: slug,
+            component: template,
             context: {
-                slug: node.fields.slug,
+                slug: slug,
             },
         })
     })
