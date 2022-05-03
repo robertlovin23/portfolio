@@ -143,9 +143,9 @@ export default function Index({data}){
                                   </div>
                                   <div className="text-base text-white-700">
                                     <p>
-                                      I have over 2 years of experience working with 
-                                      top start-ups and building unique products, all while earning my Master's degree.
-                                      I value hard-work, learning, and creativity.
+                                      I have over 4 years of experience working with
+                                      enterprise brands and top startups, and I have experience leading software development teams.
+                                      I value hard-work, learning, and will stop at nothing to get the job done.
                                     </p>
                                   </div>
                                 </div>
