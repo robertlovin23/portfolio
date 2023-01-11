@@ -21,7 +21,7 @@
     "gatsby-remark-images": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-theme-tailwindcss": "^1.1.0",
-    "gatsby-transformer-remark": "^2.8.16",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.5",
     "nodemailer": "^6.4.10",
     "prop-types": "^15.7.2",
