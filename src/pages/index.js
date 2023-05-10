@@ -41,7 +41,7 @@ export default function Index({data}){
                               })
                               .pauseFor(1000)
                               .deleteAll()
-                              .typeString('I am a JavaScript Developer and Web Designer based in Denver, Colorado.')
+                              .typeString('I am a Full Stack Developer based in Denver, Colorado.')
                               .pauseFor(5000)
                               .start();
                           
@@ -52,7 +52,7 @@ export default function Index({data}){
                         <p>I design dependable and cost-effective technological solutions 
                           for people who want to focus on refining their business.</p>
                       </div>
-                      <a href="#about" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow btn" style={{marginTop:"15px"}}>
+                      <a href="#about" className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow btn" style={{marginTop:"15px"}}>
                         More About Me
                       </a>
                     </div>
@@ -143,7 +143,7 @@ export default function Index({data}){
                                   </div>
                                   <div className="text-base text-white-700">
                                     <p>
-                                      I have over 4 years of experience working with
+                                      I have over 5 years of experience working with
                                       enterprise brands and top startups, and I have experience leading software development teams.
                                       I value hard-work, learning, and will stop at nothing to get the job done.
                                     </p>

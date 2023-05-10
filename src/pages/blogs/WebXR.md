@@ -1,5 +1,5 @@
 ---
-author: "Robert Lovin"
+author: "Robert Lovin "
 title: "WebXR API"
 date: "2020-06-24"
 template: "blog"

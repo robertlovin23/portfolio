@@ -17,6 +17,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.project-card{
+    margin-top:20px;
+}
 .profectPic{
     margin-left: auto;
     margin-right: auto;
@@ -222,6 +225,7 @@ footer{
 @media (max-width: 1030px) {
     .project-card{
         margin-bottom: 10px;
+        margin-top:10px;
     }
     .servicesRow{
         margin-left: 50px;

@@ -20,11 +20,11 @@ export default function Projects({projects}){
                     if(slugName === "projects"){
                       return(
                         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 project-card">
-                          <div class="rounded shadow-lg">
-                            <Img className="w-full" fluid={projImg} className="projectImg"/>
-                            <div class="px-6 py-4">
+                          <div className="rounded shadow-lg">
+                            <Img className="w-full projectImg" fluid={projImg}/>
+                            <div className="px-6 py-4">
                               <Link className="font-bold text-xl mb-2" to={node.fields.slug} style={{textDecoration:"none", color:'inherit'}}>{node.frontmatter.title}</Link>
-                              <p class="text-gray-700 text-base">
+                              <p className="text-gray-700 text-base">
                               {node.excerpt}
                               </p>
                           </div>

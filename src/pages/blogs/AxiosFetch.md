@@ -1,7 +1,7 @@
 ---
 title: "Axios Vs. Fetch"
 date: "2020-06-19"
-author: "Robert Lovin"
+author: "Robert Lovin "
 featuredImage: "../../images/computerCoffee.jpg"
 template: "blog"
 ---

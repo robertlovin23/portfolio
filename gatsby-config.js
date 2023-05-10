@@ -14,17 +14,7 @@ module.exports = {
         args: `?onload=onloadCallback&render=explicit`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-        options: {
-          fonts: [
-            {
-              family: `Open Sans`,
-              variants: [`300`,`600`]
-            },
-          ],
-        },
-    },
+  
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -49,12 +39,14 @@ module.exports = {
         display: 'swap'
       }
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`
-    },
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/computerCoffee.jpg`
+      }
+    },  
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

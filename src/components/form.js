@@ -52,9 +52,9 @@ const Form = () => {
     <div className="flex mb-4">
         <form className="w-full md:w-1/2 h-12 form"  method="post" onSubmit={handleSubmit(onSubmit)}>
         <h2 className="title">Contact Me</h2>
-            <div class="flex flex-wrap -mx-3 mb-4">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+            <div className="flex flex-wrap -mx-3 mb-4">
+                    <div className="w-full px-3">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="name">
                             Full Name
                         </label>
                         <input id="name" 
@@ -70,9 +70,9 @@ const Form = () => {
                                 )}
                     </div>
                 </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full px-3">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
                             E-mail
                         </label>
                         <input disabled={isSubmitting} 
@@ -88,9 +88,9 @@ const Form = () => {
                             )}
                     </div>
                 </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="budget">
+                <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full px-3">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="budget">
                             Budget
                         </label>
                         <input disabled={isSubmitting} 
@@ -104,7 +104,7 @@ const Form = () => {
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
                             Message
                         </label>
                         <textarea disabled={isSubmitting}

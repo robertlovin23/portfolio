@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../components/robert.css'
+import './robert.css'
 import { Link } from 'gatsby'
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
                 {/* <Link to={"#projects"}className="block px-4 py-2 lg:inline-block lg:mt-0 menu-text hover:text-gray mr-4">
                     Projects
                 </Link> */}
-                <Link to={'/blog'} class="block px-4 py-2 lg:inline-block lg:mt-0 menu-texthover:text-gray mr-4">
+                <Link to={'/blog'} className="block px-4 py-2 lg:inline-block lg:mt-0 menu-texthover:text-gray mr-4">
                     Blog
                 </Link>
             </div>    
