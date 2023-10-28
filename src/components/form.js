@@ -123,7 +123,7 @@ const Form = () => {
                     </div>
                 </div>
                 <Recaptcha 
-                    sitekey="6LdTFKwZAAAAAGIK53idDfSeFILiYYQOv3Bz3dJp"
+                    sitekey="6LehOtYoAAAAANmdQrumINrNtqECdIT3sdHzDDRh"
                     size="invisible"
                     ref={e => recaptchaInst = e}
                     verifyCallback={verifyCallback}/>
